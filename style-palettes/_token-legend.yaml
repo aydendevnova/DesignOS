@@ -1,0 +1,40 @@
+# Shared vocabulary for style palette YAML files.
+# Use this when resolving param names (e.g. colorPalette: "Carbon Frost") to concrete tokens.
+
+version: 1
+
+# What each semantic key means in generated UI (role → usage).
+semantic_keys:
+  surface.primary:
+    role: page / section background for light zones
+    typical_use: default canvas behind body copy and light sections
+  surface.secondary:
+    role: tinted secondary surface (cards, tiles, pills)
+    typical_use: bento tiles, announcement badges, subtle panels
+  surface.inverse:
+    role: dark or inverted surface
+    typical_use: dark sections, photo overlays, terminal cards, CTA slabs
+  foreground.primary:
+    role: primary text and icons on light surfaces
+    typical_use: headlines, body on surface.primary
+  foreground.secondary:
+    role: secondary text on light surfaces (less emphasis than primary)
+    typical_use: supporting paragraphs, sublabels
+  foreground.muted:
+    role: de-emphasized text on light surfaces
+    typical_use: captions, logos, tertiary nav
+  foreground.inverse:
+    role: text and icons on dark / inverse surfaces
+    typical_use: copy on surface.inverse or photos
+  border.subtle:
+    role: hairline dividers and light borders
+    typical_use: rules between rows, tab underlines, card outlines
+  accent.primary:
+    role: primary brand / action hue
+    typical_use: CTAs, key highlights, focus states (per style rules)
+  accent.secondary:
+    role: second accent (pairs, gradients, warm counterpoints)
+    typical_use: sparing; defined per palette
+  accent.tertiary:
+    role: third accent (decorative strips, tertiary highlights)
+    typical_use: rare; defined per palette

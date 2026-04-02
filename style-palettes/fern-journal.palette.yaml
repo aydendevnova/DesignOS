@@ -1,0 +1,24 @@
+id: fern-journal
+display_name: Fern Journal
+summary: White warm page, deep green inverse for floating terminal, single green accent used minimally.
+
+used_in_styles:
+  - Editorial Scientific
+
+colors:
+  surface.primary: "#FFFFFF"
+  surface.inverse: "#1E3322"
+  foreground.primary: "#1E3322"
+  foreground.secondary: "#6B7B6B"
+  foreground.muted: "#808A80"
+  foreground.inverse: "#FFFFFF"
+  accent.primary: "#2D6B3F"
+
+token_semantics:
+  surface.primary: Dominates page — hero and surrounding whitespace.
+  surface.inverse: Floating terminal card over photograph only.
+  foreground.primary: Text on white sections.
+  foreground.secondary: Secondary text on light ground.
+  foreground.muted: Partner logos, secondary nav.
+  foreground.inverse: Text on terminal / inverse card.
+  accent.primary: Primary CTA fill and single timeline mark only — nowhere else.

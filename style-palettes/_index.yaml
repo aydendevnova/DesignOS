@@ -1,0 +1,16 @@
+# Registry: colorPalette param string → palette file (kebab-case id).
+# AI: resolve user-facing palette names from design-guides Style-*.md via this map.
+
+palettes:
+  Carbon Frost: carbon-frost.palette.yaml
+  Deep Space Neon: deep-space-neon.palette.yaml
+  Fern Journal: fern-journal.palette.yaml
+  Forest Sage: forest-sage.palette.yaml
+  Heritage Warmth: heritage-warmth.palette.yaml
+  Parchment Gold: parchment-gold.palette.yaml
+  Tangerine Orbit: tangerine-orbit.palette.yaml
+  Terminal Green: terminal-green.palette.yaml
+  Warm Concrete: warm-concrete.palette.yaml
+  Warm Linen: warm-linen.palette.yaml
+
+token_legend: _token-legend.yaml

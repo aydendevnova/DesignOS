@@ -1,0 +1,112 @@
+# Design OS - Halo
+# Extracted from Pencil.dev x: prefix library (halo.lib.pen)
+# Identity: Purple/indigo accent, generous radius, modern SaaS aesthetic.
+# Best for: Consumer SaaS, creative tools, collaboration platforms, design-forward products.
+
+name: "halo"
+source: "pencil:x"
+description: >
+  A purple-accented design system with generous border radii and a polished,
+  contemporary feel. Inter typography throughout. The large radius values
+  (24px medium, 40px large) create a distinctly rounded, approachable aesthetic
+  that differentiates it from the sharper defaults of shadcn.
+
+fonts:
+  heading:
+    family: "'Inter', sans-serif"
+    weights: [400, 500, 600, 700]
+    source: "google"
+    url: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+  body:
+    family: "'Inter', sans-serif"
+    weights: [400, 500, 600]
+    source: "google"
+    url: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+  mono:
+    family: "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace"
+    weights: [400]
+    source: "system"
+
+palette:
+  light:
+    primary: "#5749F4"
+    primary-foreground: "#FFFFFF"
+    background: "#FFFFFF"
+    foreground: "#2A2933"
+    card: "#FFFFFF"
+    card-foreground: "#2A2933"
+    tile: "#F7F7F8"
+    tile-foreground: "#2A2933"
+    secondary: "#F0EEFE"
+    secondary-foreground: "#5749F4"
+    muted: "#F7F7F8"
+    muted-foreground: "#616167"
+    destructive: "#CC3314"
+    destructive-foreground: "#FFFFFF"
+    border: "#C5C5CB"
+    input: "#C5C5CB"
+    ring: "#5749F4"
+    accent: "#F0EEFE"
+    accent-foreground: "#5749F4"
+    sidebar: "#F7F7F8"
+    sidebar-foreground: "#2A2933"
+    sidebar-accent: "#F0EEFE"
+    sidebar-accent-foreground: "#5749F4"
+  dark:
+    primary: "#7B70F7"
+    primary-foreground: "#FFFFFF"
+    background: "#121218"
+    foreground: "#E8E8EC"
+    card: "#1A1A22"
+    card-foreground: "#E8E8EC"
+    tile: "#1A1A22"
+    tile-foreground: "#E8E8EC"
+    secondary: "#2A2940"
+    secondary-foreground: "#B0A8FF"
+    muted: "#1E1E28"
+    muted-foreground: "#8E8E96"
+    destructive: "#E84530"
+    destructive-foreground: "#FFFFFF"
+    border: "#2E2E3A"
+    input: "#2E2E3A"
+    ring: "#7B70F7"
+    accent: "#2A2940"
+    accent-foreground: "#B0A8FF"
+    sidebar: "#16161E"
+    sidebar-foreground: "#E8E8EC"
+    sidebar-accent: "#2A2940"
+    sidebar-accent-foreground: "#B0A8FF"
+
+semantic-colors:
+  success: "#22C55E"
+  success-foreground: "#FFFFFF"
+  warning: "#F59E0B"
+  warning-foreground: "#000000"
+  info: "#3B82F6"
+  info-foreground: "#FFFFFF"
+
+label-variants:
+  - "Success"
+  - "Orange"
+  - "Violet"
+  - "Secondary"
+
+radius:
+  none: 0
+  xs: 6
+  sm: 12
+  md: 24
+  lg: 40
+  pill: 9999
+
+shadows:
+  sm: "0 1px 3px 0 rgb(0 0 0 / 0.06)"
+  md: "0 4px 12px -2px rgb(0 0 0 / 0.08)"
+  lg: "0 12px 32px -4px rgb(0 0 0 / 0.12)"
+  glow: "0 0 24px -4px rgb(87 73 244 / 0.25)"
+
+spacing:
+  base: 4
+  scale: [0, 1, 2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96]
+
+component-count: 60

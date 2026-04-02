@@ -1,0 +1,26 @@
+id: forest-sage
+display_name: Forest Sage
+summary: Warm off-white page, muted green bento tiles, dark forest inverse CTA tile, restrained green accent.
+
+used_in_styles:
+  - Soft Bento
+
+colors:
+  surface.primary: "#F5F3EEFF"
+  surface.secondary: "#C8DBBCFF"
+  surface.inverse: "#1B3A28FF"
+  foreground.primary: "#1B3A28FF"
+  foreground.secondary: "#4A6B52FF"
+  foreground.muted: "#7A9A80FF"
+  foreground.inverse: "#FFFFFFFF"
+  accent.primary: "#2D5E3AFF"
+
+token_semantics:
+  surface.primary: Page background visible in gaps between bento tiles.
+  surface.secondary: Muted green tint for all bento tiles (depth varies per tile).
+  surface.inverse: Dark tile for high-contrast CTA block.
+  foreground.primary: Primary type on tiles / light ground.
+  foreground.secondary: Secondary emphasis on sage surfaces.
+  foreground.muted: Investor logos, caption labels.
+  foreground.inverse: Text on inverse tile.
+  accent.primary: Nav CTA, status badge, sparkline — sparse highlight.

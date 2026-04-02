@@ -1,0 +1,19 @@
+id: parchment-gold
+display_name: Parchment Gold
+summary: Warm off-white and near-black type; monochrome — no accent color in UI.
+
+used_in_styles:
+  - Monumental Editorial
+
+colors:
+  surface.primary: "#F4F2EF"
+  foreground.primary: "#1A1A1A"
+  foreground.secondary: "#4A4A4A"
+  foreground.inverse: "#FFFFFF"
+
+token_semantics:
+  surface.primary: All off-photograph sections (white/warm ground).
+  foreground.primary: All type below the fold on light ground.
+  foreground.secondary: Secondary text hierarchy on light ground.
+  foreground.inverse: All type overlaid on hero photograph (treat photo as inverse plane).
+  note: No accent.* tokens — navigation arrows and links stay typographic/monochrome per style rules.

@@ -1,0 +1,26 @@
+id: tangerine-orbit
+display_name: Tangerine Orbit
+summary: Warm paper-like off-white; saturated orange family for brand/interactive; secondary orange-yellow for warmth signals; no dark surfaces.
+
+used_in_styles:
+  - Illustrated Warm
+
+colors:
+  surface.primary: "#FFFFFFFF"
+  surface.secondary: "#F7F8FAFF"
+  foreground.primary: "#1A1A1AFF"
+  foreground.secondary: "#666666FF"
+  foreground.muted: "#888888FF"
+  border.subtle: "#F3F4F6FF"
+  accent.primary: "#FF5C00FF"
+  accent.secondary: "#FF8533FF"
+
+token_semantics:
+  surface.primary: Warm off-white holding text sections (paper-like).
+  surface.secondary: Faint tint behind lower mockup panel.
+  foreground.primary: Headlines and primary copy.
+  foreground.secondary: Supporting copy.
+  foreground.muted: De-emphasized UI copy.
+  border.subtle: Tabs, accordion dividers, subtle rules.
+  accent.primary: CTA, active tab, links, announcement bar — interactive/nav only.
+  accent.secondary: Star ratings, small illustration accent marks — warmth signal.

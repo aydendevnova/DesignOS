@@ -1,0 +1,24 @@
+id: heritage-warmth
+display_name: Heritage Warmth
+summary: Warm sand ground, deep olive-brown inverse slab, terracotta-adjacent single accent; narrow warm palette.
+
+used_in_styles:
+  - Artisan Editorial
+
+colors:
+  surface.primary: "#F5F2E9FF"
+  surface.inverse: "#2D2926FF"
+  foreground.primary: "#2D2926FF"
+  foreground.secondary: "#5E5954FF"
+  foreground.inverse: "#F5F2E9FF"
+  border.subtle: "#DCD8CBFF"
+  accent.primary: "#7D6B3DFF"
+
+token_semantics:
+  surface.primary: Warm muted sand across light sections; harmonizes with warm photography.
+  surface.inverse: Deep olive-brown for final full-width dark slab.
+  foreground.primary: Primary text on sand surfaces.
+  foreground.secondary: Supporting text on light ground.
+  foreground.inverse: Text on inverse slab.
+  border.subtle: Hairline dividers (e.g. amenity bar vertical rules).
+  accent.primary: Single action/brand color — nav, CTAs, hero CTA border, decorative icon.

@@ -1,0 +1,28 @@
+id: carbon-frost
+display_name: Carbon Frost
+summary: Light neutral ground with deep inverse zones and cool blue accent; high contrast light-dark cadence.
+
+used_in_styles:
+  - Aerial Gravitas
+
+colors:
+  surface.primary: "#FFFFFF"
+  surface.inverse: "#0A0A0A"
+  foreground.primary: "#1A1A1A"
+  foreground.secondary: "#666666"
+  foreground.inverse: "#FFFFFF"
+  border.subtle: "#EEF0F2"
+  accent.primary: "#4A9FD8"
+  accent.secondary: "#0A0A0A"
+  accent.tertiary: "#B3D9F0"
+
+token_semantics:
+  surface.primary: Light warm-white ground for typography-led sections (alternates with inverse).
+  surface.inverse: Near-black for photograph-led sections and tonal overlays.
+  foreground.primary: Default body/headline text on light sections.
+  foreground.secondary: Secondary text on light sections.
+  foreground.inverse: Text on dark / photo sections.
+  border.subtle: Cool gray hairline (e.g. hero photo to type boundary).
+  accent.primary: Sparse use — list indices, eyebrow dots, CTAs, low-opacity survey lines on photos.
+  accent.secondary: Decorative color-block moment with tertiary (single transition strip).
+  accent.tertiary: Third strip in decorative color-block row.

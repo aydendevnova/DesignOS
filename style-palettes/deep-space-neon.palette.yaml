@@ -1,0 +1,24 @@
+id: deep-space-neon
+display_name: Deep Space Neon
+summary: Dark near-black surfaces; purple accent for CTA and sparkle; restrained two-surface dark UI.
+
+used_in_styles:
+  - Inline Friendly
+
+colors:
+  surface.primary: "#0A0A0AFF"
+  surface.secondary: "#1A1A1AFF"
+  foreground.primary: "#FFFFFFFF"
+  foreground.secondary: "#A1A1AAFF"
+  foreground.muted: "#71717AFF"
+  border.subtle: "#1A1A1AFF"
+  accent.primary: "#A855F7FF"
+
+token_semantics:
+  surface.primary: Main page background (dark).
+  surface.secondary: Warmer dark tint for announcement pill.
+  foreground.primary: Primary text on dark.
+  foreground.secondary: Secondary light text.
+  foreground.muted: Nav, subtitle, client logos.
+  border.subtle: Nav pill outline, logo tile outlines.
+  accent.primary: Primary CTA and sparkle before feature label — twice only.

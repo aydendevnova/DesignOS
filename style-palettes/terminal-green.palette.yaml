@@ -1,0 +1,28 @@
+id: terminal-green
+display_name: Terminal Green
+summary: Near-white page; black inverse integration panel; neon green + black accent pair; announcement gradient accent.primary → accent.secondary.
+
+used_in_styles:
+  - Product Demo
+
+colors:
+  surface.primary: "#FFFFFF"
+  surface.inverse: "#000000"
+  foreground.primary: "#000000"
+  foreground.secondary: "#333333"
+  foreground.muted: "#666666"
+  foreground.inverse: "#FFFFFF"
+  border.subtle: "#CCCCCC"
+  accent.primary: "#00FF00"
+  accent.secondary: "#000000"
+
+token_semantics:
+  surface.primary: Default page behind text and product mockup.
+  surface.inverse: Integration constellation panel only.
+  foreground.primary: Headlines and table content on light.
+  foreground.secondary: Secondary text on light.
+  foreground.muted: Logos, captions, muted sidebar states.
+  foreground.inverse: Content on inverse panel.
+  border.subtle: Table grid hairlines.
+  accent.primary: CTA, panel glow, start of announcement gradient.
+  accent.secondary: End of announcement gradient, pairs with primary in decorative band.

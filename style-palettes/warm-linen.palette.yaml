@@ -1,0 +1,26 @@
+id: warm-linen
+display_name: Warm Linen
+summary: Warm linen page; dark hero island; muted terracotta accent used only as punctuation (plus marks), not fills.
+
+used_in_styles:
+  - Spatial Plus
+
+colors:
+  surface.primary: "#F3EBE2"
+  surface.inverse: "#1A1A1A"
+  foreground.primary: "#1A1A1A"
+  foreground.secondary: "#3D3D3D"
+  foreground.muted: "#6B6B6B"
+  foreground.inverse: "#FFFFFF"
+  border.subtle: "#C5BEB6"
+  accent.primary: "#D4916E"
+
+token_semantics:
+  surface.primary: Page background outside hero block.
+  surface.inverse: Contained rounded hero block only.
+  foreground.primary: Primary copy; first clause of two-tone statement.
+  foreground.secondary: Secondary text on light ground.
+  foreground.muted: Faded clause in statement, scrolling logo bar.
+  foreground.inverse: Type inside dark hero.
+  border.subtle: Hairlines inside small overlay on portrait card.
+  accent.primary: Plus-sign marks and eyebrow prefix only — never button fills or surfaces.

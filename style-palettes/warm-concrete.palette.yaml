@@ -1,0 +1,24 @@
+id: warm-concrete
+display_name: Warm Concrete
+summary: Light nav strip on near-white; dominant dark inverse page; restrained warm accent for CTAs/icons only.
+
+used_in_styles:
+  - Cinematic Alternating
+
+colors:
+  surface.primary: "#E8E9EB"
+  surface.inverse: "#1A1A1A"
+  foreground.primary: "#1A1A1A"
+  foreground.muted: "#999999"
+  foreground.inverse: "#FFFFFF"
+  border.subtle: "#E0E0E0"
+  accent.primary: "#8F5A3C"
+
+token_semantics:
+  surface.primary: Nav bar / top sliver only on an otherwise dark-forward page.
+  surface.inverse: Hero and all feature rows — darkness is dominant.
+  foreground.primary: Not primary on page body; inverse text carries content.
+  foreground.muted: Body and captions on dark ground (low-contrast mood).
+  foreground.inverse: Headlines and UI text on dark sections.
+  border.subtle: Full-width hairlines between feature rows (on dark ground).
+  accent.primary: Maximum restraint — nav CTA, possible eyebrow icon tint only.
