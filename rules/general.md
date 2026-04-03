@@ -13,8 +13,10 @@ The active design system YAML is the source of truth. Every visual decision must
 
 ### Fonts
 - Use the fonts specified in the design system YAML. Do not substitute.
+- If no font pairing is specified in the YAML, select one from `guides/font-pairings.md` by matching the project's mood/territory to a pairing entry.
 - If the design system specifies a Google Font, it must be loaded via `next/font/google` in the layout, not via `<link>` tags.
 - Apply the heading font to all h1-h3 elements. Apply the body font to all body text. Apply the mono font to code and data elements.
+- Validate requested font weights against the weight reference in `guides/font-pairings.md` before generating CSS. Do not request weights that a font does not support.
 
 ### Radius
 - Read the design system's radius scale. Different components get different radius values:

@@ -8,7 +8,7 @@ Design OS is a frontend generation system that produces React + Tailwind + shadc
 design-systems/              YAML token definitions (Halo, Ember, Nitro, shadcn-neutral)
 styles/                      Visual style guides — composition, color, typography, shape
 style-palettes/              Color palette YAMLs with semantic token mappings
-guides/                      Generation guides per output type (landing page, webapp, mobile, slides, table)
+guides/                      Generation guides per output type + font pairings reference
 rules/                       Anti-slop, general, and task-specific generation constraints
 scaffolding/                 globals.css, tailwind config, and image handling templates
 handoff/                     Validation report format
