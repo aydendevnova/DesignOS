@@ -99,3 +99,25 @@ Three or more adjacent sections sharing the same background color is a build fai
 - Use warm or neutral off-whites for the base background, not pure `#FFFFFF` everywhere.
 - Use deliberate tonal variation between sections: a section on warm cream, the next on cool near-white. This separates sections without borders, colored bands, or shadows.
 - Reserve pure white for surfaces that need to "lift" above the ground plane (cards, dropdowns, modals).
+
+## Osmo Supply Components on Landing Pages
+
+The Osmo Supply components (`osmo-component-reference/`) are available but must be used with restraint. A landing page should use zero to two at most. Evaluate each against the criteria in `guides/osmo-components.md` before adding.
+
+### Likely Good Fits
+
+- **StickyFeatures** — strong fit for a feature showcase section with 3–6 features that each have a distinct visual. Replaces a static alternating image-text layout with a scroll-pinned cinematic reveal. Use as a mid-page section between text-heavy content.
+- **HighlightTextOnScroll** — conditional fit for a single brand statement or manifesto line between major sections. The text must be short (one to three sentences). Do not use if the style guide calls for static, architectural typography.
+- **ImagePreviewCursorFollower** — conditional fit for portfolio, case study, or project list sections. Only use when the landing page includes a list-format section where each item has a strong associated image.
+
+### Likely Poor Fits
+
+- **MegaNav** — a landing page with 3–5 anchor links does not need a mega-menu. The current simple nav is correct for single-page sites. MegaNav is designed for multi-page sites with complex information architecture (products, solutions, resources, company).
+- **ExpandingFeaturePills** — no standard landing page section uses a pill/chip pattern. The interaction model (click to expand) conflicts with the scroll-to-discover pattern that landing pages rely on. Skip unless the design explicitly calls for this pattern.
+
+### Integration Rules (Landing Page Specific)
+
+1. If you add an Osmo component, it counts as one of your 5–8 sections. It does not exist outside the section flow.
+2. Surface alternation still applies. A StickyFeatures section on a dark surface must be followed by a light section (or vice versa).
+3. All hardcoded colors, fonts, and radii must be replaced with design system tokens. The Osmo defaults are Osmo's brand — not the project's.
+4. GSAP animation easing must match the page's CSS/Framer Motion transitions. See the easing reference table in `guides/osmo-components.md`.

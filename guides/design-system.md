@@ -22,6 +22,20 @@ npx shadcn@latest add button card input table tabs dialog alert dropdown-menu pa
 | Overlay | `Dialog`, `Popover`, `Tooltip`, `Command` |
 | Navigation | `Tabs`, `Breadcrumb`, `Pagination`, `NavigationMenu` |
 
+### Osmo Supply Components (optional)
+
+Five GSAP-powered animation components are available in `osmo-component-reference/`. These are supplementary — most pages need zero to two. See `guides/osmo-components.md` for evaluation criteria and per-component integration rules.
+
+| Component | Purpose |
+|-----------|---------|
+| `StickyFeatures` | Scroll-pinned feature showcase with clip-path transitions |
+| `HighlightTextOnScroll` | Per-character text highlight driven by scroll position |
+| `ImagePreviewCursorFollower` | Cursor-following image preview on list item hover |
+| `MegaNav` | Animated mega-menu navigation (multi-page sites only) |
+| `ExpandingFeaturePills` | Expandable pill-shaped feature items |
+
+All Osmo components are `"use client"` and require `gsap`. Do not add them unless they clear the evaluation criteria in the Osmo components guide. When used, override all hardcoded colors, fonts, and radii to match the active design system tokens.
+
 ---
 
 ## 2. Component Composition

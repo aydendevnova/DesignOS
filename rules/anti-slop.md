@@ -100,4 +100,16 @@ UNIFORMITY
 [ ] Border-radius varies between component types
 [ ] Section padding varies (2+ distinct values)
 [ ] Shadow values vary between elevation levels
+
+OSMO COMPONENTS (if any used)
+[ ] No more than 3 Osmo components on the page
+[ ] Each Osmo component passes all 4 evaluation criteria (serves content, matches animation feel, works on mobile, justifies weight)
+[ ] All hardcoded colors replaced with CSS variable references from globals.css
+[ ] All hardcoded fonts replaced with design system font families
+[ ] All hardcoded border-radius values replaced with design system radius scale
+[ ] GSAP easing and duration match the page's CSS/Framer Motion transitions
+[ ] Mobile rendering verified at 375px — no broken layouts, no desktop-only interactions visible
+[ ] FAIL if MegaNav used on a single-page site with fewer than 4 navigation sections
+[ ] FAIL if ExpandingFeaturePills used without an existing pill/chip pattern in the design
+[ ] FAIL if any Osmo component still contains Osmo brand colors (#6840ff, #272a2a, #f2f2f2, font-haffer)
 ```

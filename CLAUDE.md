@@ -3,13 +3,14 @@
 Design OS is a frontend generation system that produces React + Tailwind + shadcn/ui code with a specific design identity. The repo contains design system YAMLs, visual style guides, compositional rules, scaffolding instructions, and style palettes. Generated projects use Next.js App Router with TypeScript.
 
 ```
-design-systems/   — YAML token definitions (Halo, Ember, Nitro, shadcn-neutral)
-styles/           — 10 visual style guides (composition, color, typography, shape)
-style-palettes/   — color palette YAMLs with semantic token mappings
-guides/           — generation guides per output type (landing page, webapp, mobile, etc.)
-rules/            — anti-slop, general, and task-specific constraints
-scaffolding/      — globals.css, tailwind config, and image handling templates
-handoff/          — validation report format
+design-systems/              — YAML token definitions (Halo, Ember, Nitro, shadcn-neutral)
+styles/                      — 10 visual style guides (composition, color, typography, shape)
+style-palettes/              — color palette YAMLs with semantic token mappings
+guides/                      — generation guides per output type (landing page, webapp, mobile, etc.)
+rules/                       — anti-slop, general, and task-specific constraints
+scaffolding/                 — globals.css, tailwind config, and image handling templates
+handoff/                     — validation report format
+osmo-component-reference/    — optional GSAP animation components (Osmo Supply library)
 ```
 
 ## Design OS

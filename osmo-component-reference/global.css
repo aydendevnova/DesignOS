@@ -1,0 +1,35 @@
+
+/* ... usual Tailwind config... */
+
+
+@font-face {
+    font-family: "Haffer";
+    src: url("/fonts/HafferRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Haffer";
+    src: url("/fonts/HafferMedium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Haffer Mono";
+    src: url("/fonts/HafferMonoRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Haffer Mono";
+    src: url("/fonts/HafferMonoMedium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }

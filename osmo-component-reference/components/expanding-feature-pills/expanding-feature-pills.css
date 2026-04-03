@@ -1,0 +1,65 @@
+[data-feature-pills-init] {
+  --content-item-expanded: 25em;
+}
+
+@media screen and (max-width: 991px) {
+  [data-feature-pills-init] {
+    --content-item-expanded: calc(50% - 0.5em);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  [data-feature-pills-init] {
+    --content-item-expanded: 100%;
+  }
+}
+
+[data-feature-pills-button] {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out 300ms;
+}
+
+[data-feature-pills-inner] {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+
+[data-feature-pills-visual] {
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+
+[data-feature-pills-cover] {
+  opacity: 1;
+  transition: opacity 350ms ease-in-out;
+}
+
+[data-feature-pills-item][data-active="true"] [data-feature-pills-button] {
+  opacity: 0;
+  transition: opacity 50ms ease-in-out 0ms;
+}
+
+[data-feature-pills-item][data-active="true"] [data-feature-pills-inner] {
+  opacity: 1;
+}
+
+[data-feature-pills-visual][data-active="true"] {
+  opacity: 1;
+}
+
+[data-feature-pills-cover][data-active="false"] {
+  opacity: 0;
+}
+
+[data-feature-pills-close] {
+  transform: scale(0) rotate(135deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+[data-feature-pills-active="true"] [data-feature-pills-close] {
+  transform: scale(1) rotate(45deg);
+  opacity: 1;
+  pointer-events: auto;
+}

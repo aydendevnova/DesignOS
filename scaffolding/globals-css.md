@@ -150,6 +150,30 @@ const bodyFont = Inter({
 
 For system fonts (shadcn-neutral), skip `next/font` and set the CSS variables directly to the system font stack.
 
+## Osmo Component Theme Tokens
+
+If the project uses any Osmo Supply component, add these custom breakpoints and (optionally) font tokens to the `@theme` block. For Tailwind CSS v4 projects (no `tailwind.config.ts`), this goes in `globals.css`:
+
+```css
+@theme {
+  --breakpoint-desktop: 992px;
+  --breakpoint-xs: 480px;
+}
+```
+
+The `--breakpoint-desktop` token is required by all Osmo components for responsive behavior (`max-desktop:` variant). The `--breakpoint-xs` token is used by MegaNav for small-screen overrides.
+
+If using MegaNav with its default Haffer fonts (instead of overriding with the design system's fonts), also add:
+
+```css
+@theme {
+  --font-haffer: "Haffer", Arial, sans-serif;
+  --font-haffer-mono: "Haffer Mono", Arial, sans-serif;
+}
+```
+
+And add `@font-face` declarations for Haffer (see `osmo-component-reference/Integration.md`). In most cases, replace Haffer with the active design system's heading and mono fonts instead.
+
 ## HSL Conversion Reference
 
 When converting hex to HSL channels for CSS variables:

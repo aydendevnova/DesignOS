@@ -100,3 +100,19 @@ All images follow the container-first approach documented in `design-os/scaffold
 - Prefer Tailwind utility classes over custom CSS. Custom CSS only for animations or complex selectors that Tailwind cannot express.
 - No inline styles. Exception: dynamic values from data (e.g., `style={{ width: `${percentage}%` }}`).
 - Images via `next/image` with explicit width/height or fill + sizes.
+
+## Osmo Supply Component Integration
+
+When using Osmo Supply components (`osmo-component-reference/`), these rules are mandatory:
+
+### Token Override Rule
+Every Osmo component ships with hardcoded colors, fonts, and radii from Osmo's brand. Before using any component, replace ALL hardcoded values with the active design system's CSS variables. No `#6840ff`, no `#272a2a`, no `font-haffer` in shipped code — only `bg-primary`, `text-foreground`, `font-heading`, etc. from `globals.css`.
+
+### Animation Consistency Rule
+GSAP animations in Osmo components must use the same easing curve and duration as the rest of the page. If the page uses `600ms ease-out` CSS transitions, the GSAP equivalent is `duration: 0.6, ease: "power2.out"`. Do not mix bouncy easings (`back.out(2)`) with smooth/confident page animations. Override the component's defaults.
+
+### Restraint Rule
+Most pages need zero Osmo components. Add one only if it directly improves a specific section's UX. Never add more than two to a single page. Run the evaluation criteria in `guides/osmo-components.md` before each addition. A component that merely decorates without serving the content is a build failure.
+
+### Dependency Rule
+All Osmo components require `gsap` and the `--breakpoint-desktop: 992px` theme token. If the page does not already use GSAP, adding a component means adding ~60KB gzipped. Justify the weight against the visual payoff.
